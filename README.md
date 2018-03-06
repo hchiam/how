@@ -1,2 +1,7 @@
 # how
-How. An experimental programming language. Interactive programming? Programming by voice? How might we rephrase code to be more readable and to follow the flow of data?
+An experimental programming language.
+
+Interactive programming? Programming by voice? **How** might we rephrase code to be more readable and to follow the flow of data?
+
+# Live demo:
+https://codepen.io/hchiam/full/LQqPYY/

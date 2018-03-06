@@ -1,0 +1,52 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+
+  <body>
+
+    <div id='fillertext'></div>
+
+    <div>
+      <button id="b" onclick='test()'>test</button>
+    </div>
+
+    <textarea autofocus id="i" type="text" placeholder='Try typing this: "hello world" printed' oninput="triggerTranspile()" cols="70"></textarea>
+
+    <div id="mainDisplays">
+      <p id='lineNumbers'></p>
+      <p id='o'></p>
+    </div>
+
+    <p id='thingsToImplement'></p>
+
+    <p><a href='https://goo.gl/forms/J7GmtrMqB2qqHQa53' target="_blank">Give Feedback</a></p>
+
+    <p><button onclick="toggleShowSourceFetch()">Get Example Code Snippets</button></p>
+
+    <div id="sourceFetch">
+      <div>
+        <input id='words' class='w3-card-4 w3-hover-blue' type='text' oninput='triggerFetch()' onkeydown="userWantsAnswerNow(event)" placeholder='Example: create class' title='Enter what you’d like to see an example of. Hit Enter.' />
+      </div>
+      <div>
+        <input id='language' class='w3-card-4 w3-hover-blue' type='text' oninput='triggerFetch()' onkeydown="userWantsAnswerNow(event)" value='javascript' placeholder='Example: javascript' title='Enter a programming language.' />
+      </div>
+      <p id='wait'></p>
+      <div id='codebox'>
+        <button class='copyBtn w3-card-4 w3-hover-blue' onclick='copyCodeToClipboard()'>Copy to Clipboard</button>
+        <button class='copyBtn w3-card-4 w3-hover-blue' onclick='saveCode()'>Save to File</button>
+        <div id='snippet' class='w3-card'></div>
+        <button class='copyBtn w3-card-4 w3-hover-blue' onclick='copyCodeToClipboard()'>Copy to Clipboard</button>
+        <button class='copyBtn w3-card-4 w3-hover-blue' onclick='saveCode()'>Save to File</button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/compromise"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.7.5/beautify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="brain.js"></script>
+
+  </body>
+
+</html>

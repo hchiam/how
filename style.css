@@ -1,0 +1,88 @@
+* {
+  font-family: avenir, arial;
+  font-size: medium;
+}
+
+body {
+  background: rgb(40,40,30);
+  color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+}
+
+#i {
+  background: rgb(200,200,170);
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#o {
+  background: rgb(30,20,20);
+  padding: 0px;
+}
+
+#lineNumbers {
+  background: rgb(30,20,20);
+  color: lightblue;
+  font-weight: bold;
+  padding: 0px;
+}
+
+#thingsToImplement {
+  padding: 0px;
+}
+
+#mainDisplays {
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  display: -ms-grid;
+  -ms-grid-template-columns: 1fr 20fr;
+}
+
+button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+  color: lightblue;
+}
+
+/* for sourcefetch code: */
+
+#sourceFetch {
+  visibility: hidden;
+}
+
+input {
+  background: rgb(200,200,170);
+  padding: 10px;
+  margin: 10px;
+  font-size: medium;
+  font-family: avenir, arial;
+  width: 250px;
+  text-align: center;
+}
+
+#snippet {
+  white-space: pre-wrap; /*to preserve spaces and newlines*/
+  text-align: left;
+  color: lawngreen;
+  padding: 10px;
+  margin: 10px;
+  background: darkslategrey;
+  border-radius: 10px;
+  padding: 40px;
+  visibility: hidden;
+}
+
+.copyBtn {
+  visibility: hidden;
+}
+
+#language {
+  visibility: hidden;
+}
+
+#wait {
+  background: blue;
+}
